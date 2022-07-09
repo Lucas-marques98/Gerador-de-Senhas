@@ -8,7 +8,7 @@ Antes de iniciar a clonagem do projeto é necessário ter instalado em sua máqu
 
 NodeJS ou Yarn
 
-GitHub instalado em sua máquina
+Git instalado em sua máquina
 
 Execute o seguinte comando no seu terminal git clone terminal: git remote add origin  https://github.com/Lucas-marques98/GeradorDesenha
 
