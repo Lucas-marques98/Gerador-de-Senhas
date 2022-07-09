@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Random pass</title>
+</head>
+
+<body>
+<header class="cab">
+<h1 class="title">
+    <img src="https://readme-typing-svg.herokuapp.com?color=F7F7F7&center=falso&vCenter=verdadeiro&height=100&lines=Sejam+Bem+vindos+%E2%9C%A8;Aperte+em+Gerar+senha+%F0%9F%91%87" alt="Aperte em Gerar senhar">
+</h1>      
+<div class="container">
+    <div class="text">Gerador de Senha Aleatória<br> Feito em HTML,CSS & JS</div>
+    <div class="input-data">
+        <div class="display">
+            <input type="text">
+            <span class="far" onclick="copy()"><ion-icon name="copy-outline"></ion-icon></span>
+            <span class="fas" onclick="copy()"><ion-icon name="copy"></ion-icon></span>
+        </div>
+        <button>Gerar Senha</button>
+    </div>
+</div>
+</header>
+<footer><img src="http://i.picasion.com/gl/92/g2Vg.gif" alt="Lucas Marques"></footer>
+        
+  <script>
+    const display = document.querySelector("input"),
+    button = document.querySelector("button"),
+    copyBtn = document.querySelector("span.far"),
+    copyActive = document.querySelector("span.fas");
+    let chars = "milagre7467esperanca77473848";
+    button.onclick = () => {
+      let i, randomPassword = "";
+      copyActive.style.display = "none";
+      copyBtn.style.display = "block";
+      for (i = 0; i < 16; i++) {
+        randomPassword = randomPassword + chars.charAt(
+          Math.floor(Math.random() * chars.length)
+        );
+      }
+      display.value = randomPassword;
+    }
+
+    function copy(){
+      copyBtn.style.display = "none";
+      copyActive.style.display = "block";
+      display.select();
+      document.execCommand("copy")
+    }
+  </script>
+</body>
+
+</html>
