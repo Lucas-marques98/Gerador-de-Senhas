@@ -18,6 +18,6 @@ Execute o seguinte comando no seu terminal git clone terminal: git remote add or
 
 -HTML
 
--JAVASCRIPT
-
 -CSS
+
+-JAVASCRIPT 
