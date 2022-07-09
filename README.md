@@ -10,7 +10,7 @@ NodeJS ou Yarn
 
 GitHub instalado em sua máquina
 
-Execute o seguinte comando no seu terminal git clone terminal: git remote add origin https://github.com/Lucas-marques/GeradorDeSenha
+Execute o seguinte comando no seu terminal git clone terminal: git remote add origin  https://github.com/Lucas-marques98/GeradorDesenha
 
 1º Baixar dependências do front-end: Após baixar o projeto basta abrir o arquivo html no navegador para iniciar o projeto
 
